@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mmResponseCell.cpp" />
+    <ClCompile Include="mmRowData.cpp" />
+    <ClCompile Include="mmRowData.h" />
+    <ClCompile Include="mmSolutionCell.cpp" />
+    <ClCompile Include="mmSolutionCell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mmResponseCell.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CCA4F6D7-6715-4120-B38D-0153AB714FF9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,8 +151,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
