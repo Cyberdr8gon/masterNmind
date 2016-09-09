@@ -15,25 +15,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mmSolutionCell.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="mmRowData.h">
       <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mmSolutionCell.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mmResponseCell.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mmRowData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="mmResponseCell.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="mmRowData_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
