@@ -51,13 +51,16 @@ namespace mastermind
 		std::vector<int> getSolutionAttempt();
 		std::vector<int> getIntResponse();
 
+		bool isGameOver();
 
 	private:
 		inline void assertVectorRightSize(std::vector<int> &vectorToCheck) const;
 		void populateResponse(std::vector<solutionCell> &solution);
-		bool assertNotInSet(std::vector<solutionRelationship>& relationshipList, int solutionIndex, int attemptIndex);
+		static bool assertNotInSet(std::vector<solutionRelationship>& relationshipList, int solutionIndex, int attemptIndex);
 
-
+		// this should eventually be removed as to decrease the replication of data
+		// for a couple games the performance penalty will be negligable but for larger
+		// numbers of concurrent games it could be a serious issue and an avenue for further optimization
 		int mWidthOfBoard = 0;
 		int mColorsOfBoard = 0;
 

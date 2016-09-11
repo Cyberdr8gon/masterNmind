@@ -41,6 +41,7 @@ int main(int argc, char* argv[])
 		test2SolutionAttempt.push_back(1);
 	}
 
+
 	mastermind::rowData test2(boardWidth, boardColors, test2SolutionAttempt, testSolution);
 	returnDataFromSolutionAttempt = test2.getSolutionAttempt();
 	for (int solutionAttemptIndex : returnDataFromSolutionAttempt)
@@ -53,8 +54,38 @@ int main(int argc, char* argv[])
 	{
 		std::cout << c << std::endl;
 	}
+
+
+
+	// 9/11/16 major error, not responding to o's
+
+	// 9/11/16 error resolved, forgot to change a iterator
+	// from i to j
+
+	std::vector<int> test3SolutionAttempt;
+	for (int i = boardWidth; i > 0; i--)
+	{
+		test3SolutionAttempt.push_back(i);
+	}
+
+	mastermind::rowData test3(boardWidth, boardColors, test3SolutionAttempt, testSolution);
+	returnDataFromSolutionAttempt = test3.getSolutionAttempt();
+	for (int solutionAttemptIndex : returnDataFromSolutionAttempt)
+	{
+		std::cout << solutionAttemptIndex << std::endl;
+	}
+
+	returnDataFromResponse = test3.getIntResponse();
+	for (int c: returnDataFromResponse)
+	{
+		std::cout << c << std::endl;
+	}
+
+
+
 	return 0;
 }
+
 
 /*
 */

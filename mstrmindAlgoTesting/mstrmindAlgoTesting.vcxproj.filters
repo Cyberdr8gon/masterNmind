@@ -24,5 +24,16 @@
     <ClCompile Include="mmRowData_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mastermindGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mastermindGame_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mastermindGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,3 +1,5 @@
+#pragma once
+
 #include "mmRowData.h"
 
 namespace mastermind
@@ -51,11 +53,6 @@ namespace mastermind
 			exit(104);
 		}
 	}
-
-
-
-
-
 
 	rowData::rowData(int boardWidth, int boardColors, std::vector<int>& solutionAttempt, std::vector<solutionCell> &solution)
 	{
@@ -134,7 +131,7 @@ namespace mastermind
 		{
 			for (int j = 0; j < mSolutionAttemptData.size(); j++)
 			{
-				if (mSolutionAttemptData[i].returnColorValue() == solution[i].returnColorValue() && assertNotInSet(relationships, i, j))
+				if ((mSolutionAttemptData[i].returnColorValue() == solution[j].returnColorValue()) && assertNotInSet(relationships, i, j))
 				{
 					temp.solutionIndex = i;
 					temp.attemptIndex = j;
@@ -170,5 +167,26 @@ namespace mastermind
 
 		return true;
 	}
+
+	bool rowData::isGameOver()
+	{
+		bool valuesChecker = true;
+
+		std::vector<int> dataToCheck = getIntResponse();
+
+		if(dataToCheck.size() != mWidthOfBoard)
+		{
+			return false;
+		}
+		for (int c : dataToCheck)
+		{
+			if(c != 2)
+			{
+				valuesChecker = false;
+			}
+		}
+		return valuesChecker;
+	}
+
 
 }
