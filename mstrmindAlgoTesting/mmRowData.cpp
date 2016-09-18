@@ -1,5 +1,3 @@
-#pragma once
-
 #include "mmRowData.h"
 
 namespace mastermind

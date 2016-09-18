@@ -8,13 +8,13 @@ namespace mastermind
 	public:
 		// currently not checking if each value is in bounds
 		// except at cell level. Probably should change that
-		// and remove checks at cell level
+		// and remove checks at cell level for performance reasons
 		game(int widthOfGame,
 			 int colorsInGame,
 			 std::vector<int>& gameSolution);
 
 		void postSolutionAttempt(std::vector<int>& solutionAttempt);
-		inline int getNumberOfTurns() const;
+		int getNumberOfTurns() const;
 
 		// slightly dangerous to leave these out in the open without
 		// a private protecting the data, however, I feel for performance reasons

@@ -1,4 +1,3 @@
-#pragma once
 #include "mastermindGame.h"
 
 namespace mastermind

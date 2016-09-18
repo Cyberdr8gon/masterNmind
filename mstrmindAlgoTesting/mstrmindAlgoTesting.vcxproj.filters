@@ -30,7 +30,10 @@
     <ClCompile Include="mastermindGame_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mongoose.c">
+    <ClCompile Include="mmDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mmDatabase_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,8 +41,11 @@
     <ClInclude Include="mastermindGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mongoose.h">
+    <ClInclude Include="mmDatabase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
